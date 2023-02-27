@@ -16,6 +16,8 @@ gem "redis", "~> 4.0"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "image_processing", "~> 1.2"
+gem "simple_form", "~> 5.2"
+gem "foreman", github: "ddollar/foreman"
 
 # gem "kredis"
 # gem "bcrypt", "~> 3.1.7"
@@ -37,3 +39,4 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+

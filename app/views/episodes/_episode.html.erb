@@ -1,4 +1,4 @@
-<div id="<%= dom_id episode %>">
+<div id="<%= dom_id episode %>" style="margin-top: 20em">
   <p>
     <strong>Title:</strong>
     <%= episode.title %>
@@ -9,4 +9,9 @@
     <%= episode.description %>
   </p>
 
+  <%= content_tag(:div, "", data: {
+    controller: "podcast",
+    podcast_title: episode.title,
+    podcast_url: url_for(episode.file)
+  }) %>
 </div>

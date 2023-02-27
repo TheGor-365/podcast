@@ -46,6 +46,6 @@ class EpisodesController < ApplicationController
   end
 
   def episode_params
-    params.require(:episode).permit(:title, :description)
+    params.require(:episode).permit(:title, :description, :file)
   end
 end
